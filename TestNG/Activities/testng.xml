@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MyFirstSuite" parallel="tests">
+    <test thread-count="2" name="Test">
+        <!--  <groups>
+              <run>
+                  <exclude name="ButtonTests"/>
+                  <exclude name="HeaderTests"/>
+              </run>
+          </groups> -->
+        <!-- <parameter name="username" value="admin"/>
+        <parameter name="password" value="password"/> -->
+        <classes>
+           <!--  <class name="examples.GroupingDemo"/>
+            <class name="activities.Activity5"/>
+
+            <class name="activities.Activity7"/> -->
+            <class name="activities.Activity9"/>
+
+        </classes>
+    </test> <!-- Test -->
+
+    <test thread-count="4" name="test">
+
+        <classes>
+            <!-- <class name="examples.priorityDemo"/> -->
+
+        </classes>
+    </test>
+
+</suite>
